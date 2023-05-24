@@ -1,3 +1,2 @@
-sayHi('susan');
-sayHi(john);
-sayHi(peter);
+console.log(data);
+// console.log(names);
