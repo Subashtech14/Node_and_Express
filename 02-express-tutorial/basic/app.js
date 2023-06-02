@@ -1,10 +1,10 @@
 const express=require('express');
 const app=express();
 app.get('/',(req,res)=>{
-  res.send('Hello World');  
+  res.status().send('Hello World');  
 })
 app.get('/about',(req,res)=>{
-  res.send('About Page');  
+  res.status(200).send('About Page');  
 })
 app.all('*',(req,res)=>{
   res.status(404).send('Page Not Found');
